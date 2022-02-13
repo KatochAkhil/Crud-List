@@ -1,38 +1,87 @@
-.App {
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,800&display=swap");
+body {
+  font-family: "Montserrat", sans-serif !important;
+}
+.todoListmain {
+  width: 60%;
+  margin: 0 auto;
   text-align: center;
+  height: 510px;
+  overflow: scroll;
+  background: #1eb5fe;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.todoListmain h1 {
+  font-size: 26px;
+  padding: 10px 0;
+  font-weight: 500;
+  text-transform: uppercase;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.todoApp {
+  background: #1af2f2;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  height: 577px;
+}
+form.todo_Form_parent {
+  width: 80%;
+  margin: 0 auto;
+}
+button.btn_sumbit {
+  margin: 20px 0;
+  padding: 5px 44px;
+  background: #000;
+  border: 0;
+  color: #fff;
+  text-transform: uppercase;
+}
+.todoList {
+  display: flex;
+  width: 80%;
+  align-items: center;
+  justify-content: space-between;
+  margin: 15px auto;
+  background: #1a5179;
+  color: #fff;
+  padding: 10px 10px;
 }
 
-.App-link {
-  color: #61dafb;
+.buttons button {
+  background: #0000006b;
+  border: 0;
+  color: #fff;
+  padding: 5px 20px;
+  margin-left: 15px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.search_input {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.search_input input {
+  width: 60%;
+  padding: 5px 10px;
+  border: 0;
+  border-radius: 5px;
+  text-transform: capitalize;
+}
+input:focus {
+  border: 0 !important;
+  outline: none !important;
+  box-shadow: none !important;
+}
+button.page-link {
+  margin: 10px;
+  padding: 10px 16px;
+}
+::-webkit-scrollbar {
+  display: none;
+}
+.listTodomain {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  justify-content: space-between;
 }
